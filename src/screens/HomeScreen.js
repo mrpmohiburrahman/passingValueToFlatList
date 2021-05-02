@@ -11,7 +11,6 @@ import {
   } from 'react-native';
   // import { useTheme } from '../Data/ThemeContext';
   import DataBase from '../Data/DataBase'
-  // import DataBase from './src/Data/DataBase';
   
   import Octicons from 'react-native-vector-icons/Octicons';
   

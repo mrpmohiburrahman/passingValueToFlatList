@@ -1,26 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     View,
-    TextInput,
     FlatList,
     Text,
     TouchableOpacity,
-    Linking,
-    Modal,
-    ScrollView,
   } from 'react-native';
-  import DataBase from '../Data/DataBase'
   
   export default function Shoppin({ route }) {
     
     const { details } = route.params;
-    // const results = [{"company": "company1", "gluten": "gluten1", "id": 1, "ingredients": "ingredients1", "name": "name1"}]
-    const results = []
+    const results = []          // const results = [{"company": "company1", "gluten": "gluten1", "id": 1, "ingredients": "ingredients1", "name": "name1"}]
     results.push(details)
-    // console.log("results in ShoppingList.js === ", results)
     
     const renderItem = ({ item }) => {
-      // console.log("item in renderItem === ", item)
       return (
         <View>
           <TouchableOpacity
@@ -59,21 +51,3 @@ import {
     
     );
   }
-
-// export default function ShoppingList({ route }) {
-//   const { details } = route.params;
-
-//   return (
-//     <View style={{ flex: 1 }}>
-//       <FlatList
-//         data={details}
-//         keyExtractor={(details) => details.id}
-//         renderItem={({ details }) => (
-//           <View>
-//             <Text>{details.id}</Text>
-//           </View>
-//         )}
-//       />
-//     </View>
-//   );
-// }
