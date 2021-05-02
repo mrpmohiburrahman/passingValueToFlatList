@@ -1,0 +1,12 @@
+{
+  "name": "passingValueToFlatlist",
+  "displayName": "passingValueToFlatlist",
+  "expo": {
+    "name": "passingValueToFlatlist",
+    "slug": "passingValueToFlatlist",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
